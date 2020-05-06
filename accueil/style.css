@@ -18,15 +18,15 @@
     position: absolute;
    left: 600px;
     top: 10px; }
-  
+
   .menu ul li {
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
     padding: 20px; }
-    
-  
+
+
   ul li a {
     text-decoration: none;
     color: white;
@@ -176,7 +176,7 @@
         top: 10px;
         left: 38%;
         color: white;
-        font-size: 25Px;      
+        font-size: 25Px;
     }
     .p4p2{
       position: absolute;
@@ -199,7 +199,7 @@
         top: 10px;
         left: 38%;
         color: white;
-        font-size: 25Px;      
+        font-size: 25Px;
     }
     .p5p2{
       position: absolute;

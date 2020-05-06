@@ -1,41 +1,41 @@
 * {
     margin: 0;
     box-sizing: border-box; }
-  
+
   .page1 {
     position: relative;
     background-size: 200px;
     height: 1734px; }
-  
+
   .background {
     height: 100%;
     width: 17%;
     background-color: #E2E2E0; }
-  
+
   .logop1, .lettre, .p3p1, .rond1 {
     position: absolute;
     top: 3%;
     left: 2%; }
-  
+
   .p1p1, .p2p1 {
     position: absolute;
     top: 13%;
     left: 4%;
     font-size: 25px;
     color: #020E8A; }
-  
+
   .fleche1p1, .fleche2p1 {
     position: absolute;
     top: 13%;
     left: 14%; }
-  
+
   .p2p1 {
     color: black;
     top: 18%; }
-  
+
   .fleche2p1 {
     top: 18%; }
-  
+
   .rch {
     position: absolute;
     top: 3%;
@@ -45,7 +45,7 @@
     font-size: 14px;
     border: 2px solid black;
     background-color: white; }
-  
+
   .button1p1 {
     position: absolute;
     top: 3%;
@@ -54,15 +54,15 @@
     width: 4%;
     border: 2px solid black;
     background-color: white; }
-  
+
   .lettre, .p3p1, .rond1 {
     left: 63%;
     height: 30px; }
-  
+
   .p3p1 {
     left: 75%;
     font-size: 25px; }
-  
+
   .rond1 {
     top: 2%;
     left: 88%;
@@ -73,7 +73,7 @@
     -moz-border-radius: 30px;
     -o-border-radius: 30px;
     border-radius: 30px; }
-  
+
     .p4p1{
     position: absolute;
     top: 9%;
