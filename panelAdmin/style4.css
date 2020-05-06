@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+.page1 {
+  position: relative;
+  background-size: 200px;
+  height: 1734px; }
+
+.background {
+  height: 100%;
+  width: 17%;
+  background-color: #E2E2E0; }
+
+.logop1, .lettre, .p3p1, .rond1 {
+  position: absolute;
+  top: 3%;
+  left: 2%; }
+
+.p1p1, .p2p1 {
+  position: absolute;
+  top: 13%;
+  left: 4%;
+  font-size: 25px;
+  color: #020E8A; }
+
+.fleche1p1, .fleche2p1 {
+  position: absolute;
+  top: 13%;
+  left: 14%; }
+
+.p2p1 {
+  color: black;
+  top: 18%; }
+
+.fleche2p1 {
+  top: 18%; }
+
+.rch {
+  position: absolute;
+  top: 3%;
+  left: 23%;
+  height: 2%;
+  width: 17%;
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: white; }
+
+.button1p1 {
+  position: absolute;
+  top: 3%;
+  left: 39%;
+  height: 2%;
+  width: 4%;
+  border: 2px solid black;
+  background-color: white; }
+
+.lettre, .p3p1, .rond1 {
+  left: 63%;
+  height: 30px; }
+
+.p3p1 {
+  left: 75%;
+  font-size: 25px; }
+
+.rond1 {
+  top: 2%;
+  left: 88%;
+  width: 60px;
+  height: 60px;
+  background: #020E8A;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px; }
+
+.p4p1, .fleche3p1, .p5p1, .button2p1, .p7p1, .p8p1, .p9p1, .p27p1, .p28p1, .p29p1, .p48p1, .p49p1 {
+  position: absolute;
+  top: 9%;
+  left: 26%; }
+
+.fleche3p1 {
+  left: 23%;
+  transform: rotate(180deg); }
+
+.p5p1, .button2p1, .p7p1, .p8p1, .p9p1, .p27p1, .p28p1, .p29p1, .p48p1, .p49p1 {
+  left: 23%;
+  top: 14%;
+  font-size: 25px; }
+
+.button2p1 {
+  top: 18%;
+  height: 4%;
+  width: 17%;
+  background-color: white;
+  border: 2px solid black;
+  border-left: white;
+  border-bottom: white; }
+
+.pbutton {
+  font-size: 29px;
+  margin-left: 75%; }
+
+.pull1p1 {
+  position: absolute;
+  top: 25%;
+  left: 23%;
+  height: 200px;
+  width: 180px; }
+
+.p6p1 {
+  position: absolute;
+  top: 40%;
+  left: 23%;
+  font-size: 20px; }
+
+.p7p1 {
+  top: 42%;
+  font-size: 20px; }
+
+.p8p1 {
+  font-size: 20px;
+  top: 44%; }
+
+.p9p1 {
+  top: 46%;
+  left: 28%;
+  font-size: 16px; }
+
+.fleche4p1 {
+  position: absolute;
+  top: 46%;
+  left: 33%;
+  height: 30px; }
+
+.pull2p1 {
+  position: absolute;
+  top: 25%;
+  left: 38%;
+  height: 200px;
+  width: 180px; }
+
+.p10p1, .p11p1, .p12p1, .p13p1, .p31p1, .p32p1, .p33p1 {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  font-size: 18px; }
+
+.p11p1 {
+  top: 42%; }
+
+.p12p1 {
+  top: 44%; }
+
+.p13p1 {
+  top: 46%;
+  left: 43%;
+  font-size: 16px; }
+
+.fleche5p1 {
+  position: absolute;
+  top: 46%;
+  left: 48%;
+  height: 30px; }
+
+.pull3p1 {
+  position: absolute;
+  top: 25%;
+  left: 53%;
+  height: 200px;
+  width: 180px; }
+
+.p14p1, .p15p1, .p16p1, .p17p1, .fleche6p1 {
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  font-size: 18px; }
+
+.p15p1 {
+  top: 42%; }
+
+.p16p1 {
+  top: 44%; }
+
+.p17p1, .fleche6p1 {
+  top: 46%;
+  left: 58%;
+  font-size: 16px; }
+
+.fleche6p1 {
+  left: 63%;
+  height: 30px; }
+
+.pull4p1 {
+  position: absolute;
+  top: 25%;
+  left: 68%;
+  height: 200px;
+  width: 180px; }
+
+.p18p1, .p19p1, .p20p1, .p21p1, .fleche7p1 {
+  position: absolute;
+  top: 40%;
+  left: 68%;
+  font-size: 18px; }
+
+.p19p1 {
+  top: 42%; }
+
+.p20p1 {
+  top: 44%; }
+
+.p21p1, .fleche7p1 {
+  top: 46%;
+  left: 73%;
+  font-size: 16px; }
+
+.fleche7p1 {
+  left: 78%;
+  height: 30px; }
+
+.pull5p1 {
+  position: absolute;
+  top: 25%;
+  left: 83%;
+  height: 200px;
+  width: 180px; }
+
+.p22p1, .p23p1, .p24p1, .p25p1, .fleche8p1 {
+  position: absolute;
+  top: 40%;
+  left: 83%;
+  font-size: 18px; }
+
+.p23p1 {
+  top: 42%; }
+
+.p24p1 {
+  top: 44%; }
+
+.p25p1, .fleche8p1 {
+  top: 46%;
+  left: 88%;
+  font-size: 16px; }
+
+.fleche8p1 {
+  left: 93%;
+  height: 30px; }
+
+.pull6p1 {
+  position: absolute;
+  top: 49%;
+  left: 23%;
+  height: 200px;
+  width: 180px; }
+
+.p26p1 {
+  position: absolute;
+  top: 64%;
+  left: 23%;
+  font-size: 20px; }
+
+.p27p1 {
+  top: 66%;
+  font-size: 20px; }
+
+.p28p1 {
+  font-size: 20px;
+  top: 68%; }
+
+.p29p1 {
+  top: 70%;
+  left: 28%;
+  font-size: 16px; }
+
+.fleche9p1 {
+  position: absolute;
+  top: 70%;
+  left: 33%;
+  height: 30px; }
+
+.pull7p1 {
+  position: absolute;
+  top: 49%;
+  left: 38%;
+  height: 200px;
+  width: 180px; }
+
+.p30p1 {
+  position: absolute;
+  top: 64%;
+  left: 38%;
+  font-size: 18px; }
+
+.p31p1 {
+  top: 66%; }
+
+.p32p1 {
+  top: 68%; }
+
+.p33p1 {
+  top: 70%;
+  left: 43%;
+  font-size: 16px; }
+
+.fleche10p1 {
+  position: absolute;
+  top: 70%;
+  left: 48%;
+  height: 30px; }
+
+.pull8p1 {
+  position: absolute;
+  top: 49%;
+  left: 53%;
+  height: 200px;
+  width: 180px; }
+
+.p34p1, .p35p1, .p36p1, .p37p1, .fleche11p1 {
+  position: absolute;
+  top: 64%;
+  left: 53%;
+  font-size: 18px; }
+
+.p35p1 {
+  top: 66%; }
+
+.p36p1 {
+  top: 68%; }
+
+.p37p1, .fleche11p1 {
+  top: 70%;
+  left: 58%;
+  font-size: 16px; }
+
+.fleche11p1 {
+  left: 63%;
+  height: 30px; }
+
+.pull9p1 {
+  position: absolute;
+  top: 49%;
+  left: 68%;
+  height: 200px;
+  width: 180px; }
+
+.p38p1, .p39p1, .p40p1, .p41p1, .fleche12p1 {
+  position: absolute;
+  top: 64%;
+  left: 68%;
+  font-size: 18px; }
+
+.p39p1 {
+  top: 66%; }
+
+.p40p1 {
+  top: 68%; }
+
+.p41p1, .fleche12p1 {
+  top: 70%;
+  left: 73%;
+  font-size: 16px; }
+
+.fleche12p1 {
+  left: 78%;
+  height: 30px; }
+
+.pull10p1 {
+  position: absolute;
+  top: 49%;
+  left: 83%;
+  height: 200px;
+  width: 180px; }
+
+.p42p1, .p43p1, .p44p1, .p45p1, .fleche13p1 {
+  position: absolute;
+  top: 64%;
+  left: 83%;
+  font-size: 18px; }
+
+.p43p1 {
+  top: 66%; }
+
+.p44p1 {
+  top: 68%; }
+
+.p45p1, .fleche13p1 {
+  top: 70%;
+  left: 88%;
+  font-size: 16px; }
+
+.fleche13p1 {
+  left: 93%;
+  height: 30px; }
+
+.pull11p1 {
+  position: absolute;
+  top: 75%;
+  left: 23%;
+  height: 200px;
+  width: 180px; }
+
+.p46p1, .p47p1 {
+  position: absolute;
+  top: 90%;
+  left: 23%;
+  font-size: 20px; }
+
+.p47p1 {
+  top: 92%;
+  font-size: 20px; }
+
+.p48p1 {
+  font-size: 20px;
+  top: 94%; }
+
+.p49p1 {
+  top: 96%;
+  left: 28%;
+  font-size: 16px; }
+
+.fleche14p1 {
+  position: absolute;
+  top: 96%;
+  left: 33%;
+  height: 30px; }
+
+/*# sourceMappingURL=style5.css.map */
