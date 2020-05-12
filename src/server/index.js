@@ -3,6 +3,9 @@ const cors = require('cors');
 const logger = require('morgan');
 
 const chalk = require('chalk');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 const PROD = process.env.DEV || false;
