@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valois</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <script src="js/moveable.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    
+    <div class="customization">
+        <div class="selections">
+            <button data-selector="color" class="is-active">Changer de couleurs</button>
+            <button data-selector="motif">Choisir un motif</button>
+            <button data-selector="download">Télécharger une image</button>
+            <button data-selector="position">Orientation du pull</button>
+            <button data-selector="zoom">Zoom</button>
+            <button data-selector="restart">Recommencer</button>
+            <button data-selector="validate" class="longer-border is-simple">Valider</button>
+        </div>
+    
+        <div class="editions">
+    
+            <section data-selector="color" class="color">
+                <div data-color="blue" class="blue-bg is-active"></div>
+                <div data-color="dark_blue" class="dark_blue-bg"></div>
+                <div data-color="dark_green" class="dark_green-bg"></div>
+                <div data-color="black" class="black-bg"></div>
+                <div data-color="dark_gray" class="dark_gray-bg"></div>
+                <div data-color="gray" class="gray-bg"></div>
+                <div data-color="white" class="white-bg"></div>
+                <div data-color="yellow" class="yellow-bg"></div>
+                <div data-color="orange" class="orange-bg"></div>
+                <div data-color="red" class="red-bg"></div>
+                <div data-color="dark_red" class="dark_red-bg"></div>
+            </section>
+
+            <section data-selector="motif" class="motif">
+                <h1 class="title">Choisir un motif</h1>
+                <div class="motifs"></div>
+            </section>
+
+            <section data-selector="download" class="download">
+                <h1 class="title">Télécharger une image</h1>
+                <p>Télécharger mon image</p>
+                <img src="images/icons/images.svg" alt="Icon d'import d'image">
+                <input type="file" accept=".png,.jpg" />
+                <button class="is-simple">Parcourir ici</button>
+                <div class="downloadPreview">
+                    <p>x</p>
+                    <img src="" alt="Preview Downloaded Image">
+                </div>
+                <div class="informations">
+                    <p>Type de fichier:<br>Jpg/PNG</p>
+                    <p>*En important le fichier, je confirme détenir les droits d’auteur ou posséder une licence</p>
+                </div>
+            </section>
+
+            <section data-selector="position" class="position">
+                <h1 class="title">Sens du pull</h1>
+                <div data-position="body_front" class="is-active">
+                    <img src="images/pull/blue/body_front.png" alt="Pull image body front">
+                </div>
+                <div data-position="body_back">
+                    <img src="images/pull/blue/body_back.png" alt="Pull image body back">
+                </div>
+                <div data-position="body_left">
+                    <img src="images/pull/blue/body_left.png" alt="Pull image body left">
+                </div>
+                <div data-position="body_right">
+                    <img src="images/pull/blue/body_right.png" alt="Pull image body right">
+                </div>
+                <div data-position="head_right">
+                    <img src="images/pull/blue/head_right.png" alt="Pull image head right">
+                </div>
+                <div data-position="head_left">
+                    <img src="images/pull/blue/head_left.png" alt="Pull image head left">
+                </div>
+            </section>
+
+            <section data-selector="zoom" class="zoom">
+                <h1 class="title">Zoom</h1>
+               <button data-zoom="in" class="is-simple">+</button>
+               <button data-zoom="out" class="is-simple">-</button>
+            </section>
+
+            <section data-selector="restart" class="restart">
+                <h1 class="title">Recommencer</h1>
+                <p>
+                    Attention, si vous validez cette action il n’existera aucune sauvegarde de votre
+                    personalisation actuelle
+                </p>
+                <button class="is-simple">Recommencer</button>
+            </section>
+
+        </div>
+    
+        <div class="preview">
+            <img class="currentPull" src="images/pull/blue/body_front.png" alt="Body pull front">
+        </div>
+
+    </div>
+
+</body>
+</html>

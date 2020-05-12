@@ -1,0 +1,358 @@
+.blue {
+  color: #1F2B58;
+}
+
+.blue-bg {
+  background-color: #1F2B58;
+}
+
+.dark_blue {
+  color: #171A2D;
+}
+
+.dark_blue-bg {
+  background-color: #171A2D;
+}
+
+.dark_green {
+  color: #152017;
+}
+
+.dark_green-bg {
+  background-color: #152017;
+}
+
+.black {
+  color: #0F0F0F;
+}
+
+.black-bg {
+  background-color: #0F0F0F;
+}
+
+.dark_gray {
+  color: #282523;
+}
+
+.dark_gray-bg {
+  background-color: #282523;
+}
+
+.gray {
+  color: #A1A1A1;
+}
+
+.gray-bg {
+  background-color: #A1A1A1;
+}
+
+.white {
+  color: #F1F1F1;
+}
+
+.white-bg {
+  background-color: #F1F1F1;
+}
+
+.yellow {
+  color: #FCC730;
+}
+
+.yellow-bg {
+  background-color: #FCC730;
+}
+
+.orange {
+  color: #FC5C1F;
+}
+
+.orange-bg {
+  background-color: #FC5C1F;
+}
+
+.red {
+  color: #91040B;
+}
+
+.red-bg {
+  background-color: #91040B;
+}
+
+.light_red {
+  color: #CE1D1D;
+}
+
+.light_red-bg {
+  background-color: #CE1D1D;
+}
+
+.dark_red {
+  color: #461120;
+}
+
+.dark_red-bg {
+  background-color: #461120;
+}
+
+.customization {
+  display: flex;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 50px;
+}
+
+.editions {
+  width: 30%;
+  height: 100%;
+}
+.editions section.color {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.editions section.color div {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.editions section.color div.is-active {
+  background-image: url("../images/logo_selector.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 88%;
+  background-size: 20px;
+}
+.editions section.motif {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-height: 100%;
+}
+.editions section.motif .motifs {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.editions section.motif .motifs::-webkit-scrollbar {
+  width: 0 !important;
+}
+.editions section.motif .motifs div {
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.editions section.motif .motifs div img {
+  width: 70px;
+  height: 70px;
+}
+.editions section.position {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.editions section.position h1 {
+  width: 100%;
+}
+.editions section.position div {
+  margin: 15px 20px;
+  width: 120px;
+  height: 120px;
+  border: solid 1px #A1A1A1;
+}
+.editions section.position div img {
+  width: 100%;
+  height: 100%;
+}
+.editions section.position div.is-active {
+  border: solid 1px #020E8A;
+}
+.editions section.zoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.editions section.zoom button {
+  margin-top: 25px;
+}
+.editions section.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 25px 0;
+}
+.editions section.download input[type=file] {
+  display: none;
+}
+.editions section.download .downloadPreview {
+  display: none;
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin-top: 25px;
+  border: solid 3px #000000;
+}
+.editions section.download .downloadPreview p {
+  cursor: pointer;
+  text-align: center;
+  font-size: 26px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: #F1F1F1;
+  background-color: #CE1D1D;
+}
+.editions section.download .downloadPreview img {
+  width: 100%;
+  height: 100%;
+}
+.editions section.download img {
+  width: 50px;
+  height: 50px;
+}
+.editions section.download .informations {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.editions section.restart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+}
+.editions section.restart p {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.editions section.restart button {
+  margin-top: 25px;
+}
+
+.selections {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-right: solid 2px #000000;
+}
+
+.preview {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: #F1F1F1;
+}
+.preview .currentPull {
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===================== TITLES ===================== */
+.title {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+/* ===================== BUTTONS ===================== */
+button {
+  width: 80%;
+  position: relative;
+  background-color: transparent;
+  padding: 10px 55px;
+  border: solid 2px #000000;
+  border-left: none;
+}
+button.is-simple {
+  width: unset;
+}
+button.is-select {
+  padding: 10px 10px;
+  width: 50%;
+  border-right: unset;
+  border-top: unset;
+}
+button.longer-border {
+  border-top: unset;
+}
+button.longer-border::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  width: 500px;
+  border-top: solid 2px #000000;
+}
+button.longer-border:hover, button.longer-border.is-active {
+  color: #020E8A;
+  border-color: #020E8A;
+  border-left: unset;
+}
+button.longer-border:hover::before, button.longer-border.is-active::before {
+  border-top: solid 2px #020E8A;
+}
+button.revert-border {
+  border-left: solid 2px #000000;
+  border-right: none;
+}
+button.revert-border::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  border-right: solid 2px #000000;
+}
+button.revert-border:hover, button.revert-border.is-active {
+  border-left: solid 2px #020E8A;
+}
+button.revert-border:hover::before, button.revert-border.is-active::before {
+  border-right: solid 2px #020E8A;
+}
+button:not(.longer-border):not(.revert-border)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  border-left: solid 2px #000000;
+}
+button:not(.longer-border):not(.revert-border):hover, button:not(.longer-border):not(.revert-border).is-active {
+  border-color: #020E8A;
+  color: #020E8A;
+}
+button:not(.longer-border):not(.revert-border):hover::before, button:not(.longer-border):not(.revert-border).is-active::before {
+  border-left: solid 2px #020E8A;
+}
+
+/*# sourceMappingURL=global.css.map */

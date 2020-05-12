@@ -56,4 +56,4 @@ async function signup(req, res) {
 me.post('/signin', signin);
 me.post('/signup', signup);
 
-exports.me = me;
+module.exports = me;

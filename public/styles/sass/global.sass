@@ -1,0 +1,86 @@
+@use 'designsPage'
+
+@use '_colors'
+
+// @font-face
+//     font-family: 'Poppins'
+//     src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
+    
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap')
+
+html, body
+    height: 100vh
+    font-family: 'Poppins', sans-serif
+
+/* ===================== TITLES ===================== */
+
+.title
+    font-weight: bold
+    font-size: 26px
+
+/* ===================== BUTTONS ===================== */
+
+button
+    width: 80%
+    position: relative
+    background-color: transparent
+    padding: 10px 55px
+    border: solid 2px colors.$primary
+    border-left: none
+
+    &.is-simple
+        width: unset
+        
+    &.is-select
+        padding: 10px 10px
+        width: 50%
+        border-right: unset
+        border-top: unset
+
+    &.longer-border
+        border-top: unset
+        &::before
+            content: ""
+            position: absolute
+            right: 0
+            top: 0
+            height: 20px
+            width: 500px
+            border-top: solid 2px colors.$primary
+        &:hover,
+        &.is-active
+            color: colors.$secondary
+            border-color: colors.$secondary
+            border-left: unset
+            &::before
+                border-top: solid 2px colors.$secondary
+    
+    &.revert-border
+        border-left: solid 2px colors.$primary
+        border-right: none
+        &::before
+            content: ""
+            position: absolute
+            right: 0
+            bottom: 0
+            height: 20px
+            border-right: solid 2px colors.$primary
+        &:hover, &.is-active
+            border-left: solid 2px colors.$secondary
+            &::before
+                border-right: solid 2px colors.$secondary
+
+    &:not(.longer-border):not(.revert-border)
+        &::before
+            content: ""
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 20px
+            border-left: solid 2px colors.$primary
+        &:hover, &.is-active
+            border-color: colors.$secondary
+            color: colors.$secondary
+
+            &::before
+                border-left: solid 2px colors.$secondary

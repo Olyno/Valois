@@ -1,0 +1,149 @@
+@use 'colors'
+    
+.customization
+    display: flex
+    height: 80%
+    margin-top: 5%
+    margin-left: 50px
+
+.editions
+    width: 30%
+    height: 100%
+    section.color
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        div
+            width: 50%
+            height: 100%
+            cursor: pointer
+            &.is-active
+                background-image: url('../images/logo_selector.svg')
+                background-repeat: no-repeat
+                background-position-y: center
+                background-position-x: 88%
+                background-size: 20px
+    section.motif
+        display: flex
+        justify-content: center
+        flex-direction: column
+        text-align: center
+        max-height: 100%
+        .motifs
+            overflow-y: scroll
+            -ms-overflow-style: none
+            overflow: -moz-scrollbars-none
+            margin-top: 25px
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            &::-webkit-scrollbar
+                width: 0 !important
+            div
+                margin-top: 50px
+                width: 50%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                img
+                    width: 70px
+                    height: 70px
+    section.position
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        text-align: center
+        h1
+            width: 100%
+        div
+            margin: 15px 20px
+            width: 120px
+            height: 120px
+            border: solid 1px colors.$gray
+            img
+                width: 100%
+                height: 100%
+            &.is-active
+                border: solid 1px colors.$secondary
+    section.zoom
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        button
+            margin-top: 25px
+    section.download
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        padding: 25px 0
+        input[type="file"]
+            display: none
+        .downloadPreview
+            display: none
+            position: relative
+            width: 50%
+            height: 50%
+            margin-top: 25px
+            border: solid 3px colors.$primary
+            p
+                cursor: pointer
+                text-align: center
+                font-size: 26px
+                position: absolute
+                top: -15px
+                right: -15px
+                width: 28px
+                height: 28px
+                border-radius: 50%
+                color: colors.$white
+                background-color: colors.$light_red
+            img
+                width: 100%
+                height: 100%
+        img
+            width: 50px
+            height: 50px
+        .informations
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            text-align: center
+    section.restart
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 0 25px
+        p
+            text-align: center
+            margin-top: 25px
+            font-weight: bold
+        button
+            margin-top: 25px
+
+.selections
+    width: 25%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    border-right: solid 2px colors.$primary
+
+.preview
+    position: relative
+    width: 40%
+    height: 100%
+    background-color: colors.$white
+    .currentPull
+        width: 100%
+        height: 100%
