@@ -104,16 +104,16 @@
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
-    padding: 23px; 
-  
+    padding: 23px;
+
   }
-    
-  
+
+
   ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    color: black; 
+    color: black;
   }
 
 .pbutton {
