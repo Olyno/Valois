@@ -88,14 +88,33 @@
   top: 14%;
   font-size: 25px; }
 
-.button2p1 {
+.menu {
+  position: absolute;
   top: 18%;
+  left: 23%;
   height: 4%;
-  width: 57%;
+  width: 53%;
   background-color: white;
   border: 2px solid black;
   border-left: white;
   border-bottom: white; }
+
+  .menu ul li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 23px; 
+  
+  }
+    
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    color: black; 
+  }
 
 .pbutton {
   width: 100%;

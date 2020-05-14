@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    box-sizing: border-box; }
+  
+  .page1 {
+    position: relative;
+    background-size: 200px;
+    height: 1334px; }
+  
+  .background {
+    height: 100%;
+    width: 17%;
+    background-color: #E2E2E0; }
+  
+  .logop1, .lettre, .p3p1, .rond1 {
+    position: absolute;
+    top: 3%;
+    left: 2%; }
+  
+  .p1p1, .p2p1 {
+    position: absolute;
+    top: 13%;
+    left: 4%;
+    font-size: 25px;
+    color: #020E8A; }
+  
+  .fleche1p1, .fleche2p1 {
+    position: absolute;
+    top: 13%;
+    left: 14%; }
+  
+  .p2p1 {
+    color: black;
+    top: 18%; }
+  
+  .fleche2p1 {
+    top: 18%; }
+  
+  .rch {
+    position: absolute;
+    top: 3%;
+    left: 23%;
+    height: 2%;
+    width: 17%;
+    font-size: 14px;
+    border: 2px solid black;
+    background-color: white; }
+  
+  .button1p1 {
+    position: absolute;
+    top: 3%;
+    left: 39%;
+    height: 2%;
+    width: 4%;
+    border: 2px solid black;
+    background-color: white; }
+  
+  .lettre, .p3p1, .rond1 {
+    left: 63%;
+    height: 30px; }
+  
+  .p3p1 {
+    left: 75%;
+    font-size: 25px; }
+  
+  .rond1 {
+    top: 2%;
+    left: 88%;
+    width: 60px;
+    height: 60px;
+    background: #020E8A;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px; }
+  
+  .p4p1, .fleche3p1 {
+    position: absolute;
+    top: 9%;
+    left: 26%; }
+  
+  .fleche3p1 {
+    left: 23%;
+    transform: rotate(180deg); }
+    .p5p1{
+        @extend .p4p1 ;
+        left: 23%;
+        top: 13%;
+        font-size: 28px;
+    }
+    .carre{   
+        position:absolute;
+        top:16%;
+        left: 23%;
+        background-color: #F8F8FA;
+        height: 34%;
+        width: 28%;
+    }
+    .pull1{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    .icone-zoom{
+        position: absolute;
+        top: 4%;
+        left: 85%;
+    }
+    .p6p1{
+        position:absolute;
+        top:16%;
+        left: 55%;
+        font-size: 20px;
+    }
+    .p7p1{
+        @extend .p6p1 ;
+        left: 75%;
+    }
+    .p8p1{
+        @extend .p6p1 ;
+        top: 19%;
+    }
+    .p9p1{
+        @extend .p7p1 ;
+        top: 19%;
+    }
+    .p10p1{
+        @extend .p8p1 ;
+        top: 22%;
+    }
+    .p11p1{
+        @extend .p9p1 ;
+        top: 22%;
+    }
+    .button2p1{
+        position: absolute;
+        top: 22%;
+        left: 83%;
+        background-color: white;
+        border: 2px solid grey;
+        color: grey;
+        width: 10%;
+        height: 25px;
+    }
+    .p12p1{
+        @extend .p10p1 ;
+        top: 25%;
+    }
+    .p13p1{
+        @extend .p11p1 ;
+        top: 25%;
+    }
+    .button3p1{
+        position: absolute;
+        top: 25%;
+        left: 83%;
+        background-color: white;
+        border:2px solid black;
+        color: black;
+        width: 10%;
+        height: 25px;
+    }
+    .p14p1{
+        @extend .p12p1 ;
+        top: 28%;
+    }
+    .p15p1{
+        @extend .p13p1 ;
+        top: 28%;
+    }
+    .p16p1{
+        @extend .p14p1 ;
+        top:31%;
+    }
+    .p17p1{
+        @extend .p15p1 ;
+        top: 31%;
+    }
+    .p18p1{
+        @extend .p16p1 ;
+        top:34%;
+    }
+    .p19p1 {
+        @extend .p17p1 ;
+        top: 34%;
+    }
+    .p20p1{
+        @extend .p18p1 ;
+        top: 37%;
+    }
+    .p21p1{
+        @extend .p19p1 ;
+        top: 37%;
+    }
+    .p22p1{
+        @extend .p20p1 ;
+        top: 40%;
+    }
+    .p23p1{
+        @extend .p21p1 ;
+        top: 40%;
+    }
+    .button4p1{
+        position: absolute;
+        top: 43%;
+        left: 55%;
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        height: 40px;
+        width: 8%;
+        font-size: 17px;
+    }
+    .button5p1{
+        @extend .button4p1 ;
+        left: 65%;
+    }
+    .button6p1{
+        @extend .button5p1 ;
+        left: 75%;
+    }
+    .button7p1{
+        @extend .button4p1 ;
+        top: 47%;
+        width: 13%;
+    }
+.p24p1{
+    position: absolute;
+    left: 23%;
+    top: 52%;
+    font-size: 33px;
+}
+.p25p1{
+    @extend .p24p1 ;
+    top: 57%;
+    left: 24%;
+    color: #020E8A;
+    border-bottom:2px solid #020E8A;
+}
+.p26p1{
+    position: absolute;
+    top: 57%;
+    left: 43%;
+    color: black;
+    font-size: 33px;
+}
+.carre1{
+    position: absolute;
+    left: 23%;
+    top: 63%;
+    height: 7%;
+    width: 55%;
+    background-color: #F8F8FA
+}
+.h1p1{
+    font-size: 17px;
+    margin-top:10px ;
+    margin-left: 12px;
+}
+.p27p1{
+    @extend .h1p1 ;
+}
+.p28p1{
+    font-size: 12px;
+    margin-top: 14px;
+    margin-left: 12px;
+}
+.carre2{
+    @extend .carre1 ;
+    top: 77%;
+}
+.carre3{
+        @extend .carre1 ;
+        top: 91%;
+}
+.button8p1{
+    position: absolute;
+    top: 63%;
+    left:80%;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 3%;
+    width: 8%;
+    font-size: 18px;
+}
+.button9p1{
+    @extend .button8p1 ;
+    top: 67%;
+}
