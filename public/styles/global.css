@@ -272,6 +272,57 @@
   height: 100%;
 }
 
+.sendForm {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 75px;
+}
+.sendForm .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sendForm .form form {
+  width: 50%;
+}
+.sendForm .form form .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sendForm .form form .inputs .input-with-label {
+  width: 100%;
+  margin-top: 25px;
+}
+.sendForm .form form .inputs .input-with-label.is-smaller {
+  width: 45%;
+}
+.sendForm .form form .inputs .input-with-label .input {
+  margin-top: 10px;
+  width: 100%;
+}
+.sendForm .form form .checkboxes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.sendForm .form form .checkboxes .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.sendForm .form form .checkboxes .checkbox p {
+  margin-left: 10px;
+}
+.sendForm .form form button {
+  margin-top: 25px;
+}
+
 html, body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
@@ -353,6 +404,42 @@ button:not(.longer-border):not(.revert-border):hover, button:not(.longer-border)
 }
 button:not(.longer-border):not(.revert-border):hover::before, button:not(.longer-border):not(.revert-border).is-active::before {
   border-left: solid 2px #020E8A;
+}
+
+/* ===================== INPUTS ===================== */
+input[type=checkbox] {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  outline: solid 2px #000000;
+}
+
+.input {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  padding: 10px;
+  border: solid 2px #000000;
+  border-right: none;
+}
+.input input {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.input::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 20px;
+  border-right: solid 2px #000000;
+}
+.input:focus, .input.is-active {
+  border-color: #020E8A;
+}
+.input:focus::before, .input.is-active::before {
+  border-right: solid 2px #020E8A;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -81,21 +81,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function sendDesign() {
-        fetch('/designs/add', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                pull: data.pull,
-                motifs: [...data.motifs]
+        document.querySelector('.customization').style.display = 'none';
+        document.querySelector('.sendForm').style.display = 'flex';
+        document.querySelector('.sendForm form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = Array.from(e.target.elements).map(v => {
+                return { name: v.name, value: v.value }
+            });
+            console.log(e.target.elements)
+            fetch('/designs/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    pull: data.pull,
+                    motifs: [...data.motifs],
+                    userData: { formData, login: data.userId }
+                })
             })
+            .then((newUser) => {
+                
+            })
+            .catch(console.error)
         })
-        .then(() => console.log('Success'))
-        .catch(console.error)
     }
 
+    const userId = Math.random().toString(36).substring(6);
+
     const data = {
+        userId: window.localStorage.getItem('userId') || window.localStorage.setItem('userId', userId) && userId,
         pull: {
             position: window.localStorage.getItem('pull_position') || 'body_front',
             color: window.localStorage.getItem('pull_color') || 'blue',

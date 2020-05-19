@@ -104,5 +104,69 @@
 
     </div>
 
+    <div class="sendForm">
+        <h1 class="title">Formulaire</h1>
+        <div class="form">
+            <form action="/designs/add" method="post">
+                <div class="inputs">
+                    <div class="input-with-label is-smaller">
+                        <label for="lastname">Nom:</label>
+                        <div class="input">
+                            <input id="lastname" type="text" name="lastname" required />
+                        </div>
+                    </div>
+                    <div class="input-with-label is-smaller">
+                        <label for="firstname">Prénom:</label>
+                        <div class="input">
+                            <input id="firstname" type="text" name="firstname" required />
+                        </div>
+                    </div>
+                    <div class="input-with-label">
+                        <label for="email">Email:</label>
+                        <div class="input">
+                            <input id="email" type="email" name="email" required />
+                        </div>
+                    </div>
+                    <div class="input-with-label">
+                        <label for="adresse">Adresse:</label>
+                        <div class="input">
+                            <input id="adresse" type="text" name="adresse" required />
+                        </div>
+                    </div>
+                    <div class="input-with-label is-smaller">
+                        <label for="city">Ville:</label>
+                        <div class="input">
+                            <input id="city" type="text" name="city" required />
+                        </div>
+                    </div>
+                    <div class="input-with-label is-smaller">
+                        <label for="city_code">Code Postal:</label>
+                        <div class="input">
+                            <input id="city_code" type="text" name="city_code" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="checkboxes">
+                    <div class="checkbox">
+                        <label for="checkbox_1"></label>
+                        <input id="checkbox_1" name="acceptRules" type="checkbox" />
+                        <p>J'ai lu et j'accepte le règlement du concours</p>
+                    </div>
+                    <div class="checkbox">
+                        <label for="checkbox_2"></label>
+                        <input id="checkbox_2" name="acceptUsage" type="checkbox" />
+                        <p>J'ai lu et j'accepte les conditions générales d'utilisation</p>
+                    </div>
+                    <div class="checkbox">
+                        <label for="checkbox_3"></label>
+                        <input id="checkbox_3" name="acceptNewsletters" type="checkbox" />
+                        <p>J'accepte de recevoir des informations sur les actualités de Valois</p>
+                    </div>
+                </div>
+                <button class="is-simple sendFormButton" type="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>

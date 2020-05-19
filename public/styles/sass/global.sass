@@ -65,7 +65,8 @@ button
             bottom: 0
             height: 20px
             border-right: solid 2px colors.$primary
-        &:hover, &.is-active
+        &:hover,
+        &.is-active
             border-left: solid 2px colors.$secondary
             &::before
                 border-right: solid 2px colors.$secondary
@@ -78,9 +79,43 @@ button
             bottom: 0
             height: 20px
             border-left: solid 2px colors.$primary
-        &:hover, &.is-active
+        &:hover,
+        &.is-active
             border-color: colors.$secondary
             color: colors.$secondary
 
             &::before
                 border-left: solid 2px colors.$secondary
+
+/* ===================== INPUTS ===================== */
+
+input[type="checkbox"]
+    height: 15px
+    width: 15px
+    background-color: transparent
+    outline: solid 2px colors.$primary
+
+.input
+    width: 100%
+    position: relative
+    background-color: transparent
+    padding: 10px
+    border: solid 2px colors.$primary
+    border-right: none
+    input
+        border: none
+        width: 100%
+        height: 100%
+    &::after
+        content: ""
+        position: absolute
+        right: 0
+        bottom: 0
+        height: 20px
+        border-right: solid 2px colors.$primary
+    &:focus,
+    &.is-active
+        border-color: colors.$secondary
+        &::before
+            border-right: solid 2px colors.$secondary
+
