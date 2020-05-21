@@ -15,6 +15,7 @@ module.exports = class User {
         this.email = data.email;
         this.motifs = data.motifs;
         this.pull = data.pull;
+        this.password = data.password;
         bcrypt.hash(data.password, 12).then(hashedPassword => {
             this.password = hashedPassword;
         });

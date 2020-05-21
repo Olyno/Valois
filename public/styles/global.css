@@ -323,6 +323,30 @@
   margin-top: 25px;
 }
 
+.validationPage {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+}
+.validationPage h1, .validationPage p, .validationPage button {
+  margin: 25px 0;
+}
+.validationPage p {
+  width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .customization {
+    display: flex;
+    flex-direction: column;
+  }
+  .customization .selections {
+    flex-direction: row;
+  }
+}
 html, body {
   height: 100vh;
   font-family: "Poppins", sans-serif;

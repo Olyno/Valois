@@ -10,19 +10,29 @@ design.get('/custom', (req, res) => {
 
 design.post('/add', (req, res) => {
     const { userData, motifs, pull } = req.body;
-    if (userData.acceptRules) {
-        if (userData.acceptUsage) {
-            const missingElements = Object.keys(userData).map(key => !['lastname', 'firstname', 'email', 'adresse', 'city', 'city_code'].includes(userData[key]));
+    if (userData.data.acceptRules) {
+        if (userData.data.acceptUsage) {
+            const missingElements = Object.keys(userData.data).filter(key => ![
+                'lastname',
+                'firstname',
+                'email',
+                'adresse',
+                'city',
+                'city_code',
+                'acceptRules',
+                'acceptUsage',
+                'acceptNewsletters'
+            ].includes(key));
             if (missingElements.length > 0) {
-                res.status(403).json({ message: 'This fields are missing', data: missingElements });
+                return res.status(403).send({ error: 'This fields are missing: ' + missingElements.join(', ') });
             } else {
                 const users = db.users.filter(u => u.login === userData.login);
                 if (users.length === 0) {
                     users[0] = new User({
-                        login: login,
-                        username: login,
-                        email: login + '@' + login + '.com',
-                        password: login,
+                        login: userData.login,
+                        username: userData.data.lastname + ' ' + userData.data.firstname.split('')[0].toUpperCase(),
+                        email: userData.data.email,
+                        password: userData.login,
                         motifs: motifs,
                         pull: pull
                     });
@@ -34,13 +44,13 @@ design.post('/add', (req, res) => {
                 db.save();
                 const u = users[0];
                 delete u.password;
-                res.status(200).json(u);
+                return res.status(200).json(u);
             }
         } else {
-            res.status(403).json({ message: 'User must accept conditions of use.' });
+            return res.status(403).send({ error: 'User must accept conditions of use.' });
         }
     } else {
-        res.status(403).json({ message: 'User must accept rules.' });
+        return res.status(403).send({ error: 'User must accept rules.' });
     }
 })
 
