@@ -99,6 +99,7 @@
   height: 80%;
   margin-top: 5%;
   margin-left: 50px;
+  padding-bottom: 5rem;
 }
 
 .editions {
@@ -264,7 +265,7 @@
 .preview {
   position: relative;
   width: 40%;
-  height: 100%;
+  height: 100vh;
   background-color: #F1F1F1;
 }
 .preview .currentPull {
@@ -338,18 +339,220 @@
   width: 80%;
 }
 
-@media screen and (max-width: 700px) {
-  .customization {
-    display: flex;
-    flex-direction: column;
-  }
-  .customization .selections {
-    flex-direction: row;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
 }
+.navbar .links a {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  padding: 0 20px;
+}
+.navbar .links a:hover {
+  color: #020E8A;
+}
+.navbar .links a.is-active {
+  color: #020E8A;
+}
+.navbar .links a.is-active::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 20%;
+  height: 20px;
+  width: 60%;
+  border-bottom: solid 2px #020E8A;
+}
+.navbar .social a {
+  text-decoration: none;
+  padding: 0 13px;
+}
+.navbar .social a img {
+  width: 25px;
+  height: 25px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/home_hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .titles {
+  position: absolute;
+  top: 50px;
+  left: 17%;
+}
+.hero .titles img {
+  width: 170px;
+}
+.hero .titles .title {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.contents {
+  padding: 0 100px;
+}
+.contents .concept {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+.contents .concept .content {
+  line-height: 26px;
+  width: 45%;
+}
+.contents .concept .content p {
+  margin-top: 25px;
+}
+.contents .concept .content button {
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contents .concept .images {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.contents .concept .images img {
+  height: 225px;
+  width: 159px;
+}
+.contents .concours {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.contents .concours .example {
+  width: 40%;
+}
+.contents .concours .example img {
+  width: 100%;
+  height: 100%;
+}
+.contents .concours .content {
+  width: 50%;
+}
+.contents .concours .content .title {
+  padding-bottom: 25px;
+}
+.contents .concours .content p {
+  line-height: 26px;
+}
+.contents .concours .content .steps .step {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+}
+.contents .concours .content .steps .step p {
+  margin-left: 15px;
+  width: 90%;
+}
+.contents .concours .content .steps .step .circle {
+  background-color: #020E8A;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents .concours .content .steps .step .circle img {
+  width: 25px;
+  height: 25px;
+}
+.contents .concours .content .buttons {
+  margin-top: 50px;
+}
+.contents .concours .content .buttons button:not(:first-child) {
+  margin-left: 30px;
+}
+
+.newsletter-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E2E2E0;
+  margin-top: 100px;
+  height: 25rem;
+}
+.newsletter-section img {
+  width: 400px;
+}
+.newsletter-section p {
+  margin-top: 50px;
+}
+.newsletter-section .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.newsletter-section .newsletter .input {
+  width: 30%;
+  position: relative;
+  border-bottom: none;
+}
+.newsletter-section .newsletter .input input {
+  background-color: #E2E2E0;
+}
+.newsletter-section .newsletter .input::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 97%;
+  border-bottom: solid 2px #000000;
+}
+
+.footer {
+  background-color: #0F0F0F;
+  height: 25rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer a, .footer p {
+  color: #F1F1F1;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer div {
+  width: 20%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer div:first-child {
+  width: 50%;
+  justify-content: space-evenly;
+}
+.footer div a:first-child {
+  margin-top: 25px;
+}
+
 html, body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
+}
+
+/* ===================== UTILITIES ===================== */
+b {
+  font-weight: bold;
 }
 
 /* ===================== TITLES ===================== */
@@ -369,6 +572,8 @@ button {
 }
 button.is-simple {
   width: unset;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 button.is-select {
   padding: 10px 10px;
@@ -451,7 +656,7 @@ input[type=checkbox] {
   width: 100%;
   height: 100%;
 }
-.input::after {
+.input:not(.special)::after {
   content: "";
   position: absolute;
   right: 0;
@@ -459,10 +664,10 @@ input[type=checkbox] {
   height: 20px;
   border-right: solid 2px #000000;
 }
-.input:focus, .input.is-active {
+.input input:focus, .input.is-active {
   border-color: #020E8A;
 }
-.input:focus::before, .input.is-active::before {
+.input input:focus::before, .input.is-active::before {
   border-right: solid 2px #020E8A;
 }
 

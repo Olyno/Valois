@@ -1,4 +1,5 @@
 @use 'designsPage'
+@use 'homePage'
 
 @use '_colors'
 
@@ -11,6 +12,11 @@
 html, body
     height: 100vh
     font-family: 'Poppins', sans-serif
+
+/* ===================== UTILITIES ===================== */
+
+b
+    font-weight: bold
 
 /* ===================== TITLES ===================== */
 
@@ -30,6 +36,8 @@ button
 
     &.is-simple
         width: unset
+        padding-left: 20px
+        padding-right: 20px
         
     &.is-select
         padding: 10px 10px
@@ -106,14 +114,14 @@ input[type="checkbox"]
         border: none
         width: 100%
         height: 100%
-    &::after
+    &:not(.special)::after
         content: ""
         position: absolute
         right: 0
         bottom: 0
         height: 20px
         border-right: solid 2px colors.$primary
-    &:focus,
+    input:focus,
     &.is-active
         border-color: colors.$secondary
         &::before

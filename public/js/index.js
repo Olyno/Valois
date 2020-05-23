@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function addMotif(imgData) {
+        const preview = document.querySelector('.preview');
         const copyMotif = imgData.image.element.cloneNode(true);
         const motifId = data.motifs.size;
         copyMotif.style.position = 'absolute';
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         copyMotif.style.height = imgData.image.element.height + 'px';
         copyMotif.style.top = '40%';
         copyMotif.style.left = '40%';
-        states.preview.appendChild(copyMotif);
+        preview.appendChild(copyMotif);
         data.motifs.set(motifId, {
             width: copyMotif.style.width || 0,
             height: copyMotif.style.height || 0,
@@ -40,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
             left: copyMotif.style.left || 0,
             right: copyMotif.style.right || 0
         });
-        const motif = new Moveable(states.preview, {
+        const motif = new Moveable(preview, {
             target: copyMotif,
-            container: states.preview,
+            container: preview,
             draggable: true,
             resizable: true,
             rotatable: true,
@@ -80,17 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function sendDesign() {
-        states.customization.style.display = 'none';
-        states.sendForm.style.display = 'flex';
+        document.querySelector('.customization').style.display = 'none';
+        document.querySelector('.sendForm').style.display = 'flex';
         document.querySelector('.sendForm form').addEventListener('submit', (e) => {
             e.preventDefault();
             const formData = Array.from(e.target.elements).map(v => {
-                return { name: v.name, value: v.value.replace(/on/g, true).replace(/off/g, false) }
-            }).filter(v => v.value.replace(/\s/g, '') !== '');
-            const finalFormData = {};
-            for (const d of formData) {
-                finalFormData[d.name] = d.value;
-            }
+                return { name: v.name, value: v.value }
+            });
+            console.log(e.target.elements)
             fetch('/designs/add', {
                 method: 'POST',
                 headers: {
@@ -99,26 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({
                     pull: data.pull,
                     motifs: [...data.motifs],
-                    userData: { data: finalFormData, login: data.userId }
+                    userData: { formData, login: data.userId }
                 })
             })
-            .then(res => {
-                console.log(res)
-                // if (res.status !== 200) throw new Error(res);
-                return res.json();
+            .then((newUser) => {
+                
             })
-            .then(newUser => {
-                states.sendForm.style.display = 'none';
-                states.validationPage.style.display = 'flex';
-                states.validationPage.querySelector('button').addEventListener('click', () => {
-                    states.validationPage.style.display = 'none';
-                    states.customization.style.display = '';
-                })
-            })
-            .catch(err => {
-                // document.querySelector('p.error').innerHTML = err;
-                console.log('Thus error', err);
-            })
+            .catch(console.error)
         })
     }
 
@@ -139,11 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const states = {
-        customization: document.querySelector('.customization'),
         currentPull: document.querySelector('.preview .currentPull'),
-        preview: document.querySelector('.preview'),
-        sendForm: document.querySelector('.sendForm'),
-        validationPage: document.querySelector('.validationPage'),
         selections: {
             last: document.querySelector('.selections button.is-active')
         },
@@ -256,9 +237,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==================== EDITION ZOOM ====================
     for (const zoomButton of document.querySelectorAll('.editions section.zoom button')) {
         zoomButton.addEventListener('click', () => {
-            const zoomState = zoomButton.dataset.zoom;
-            states.preview.style.width = zoomState === 'in' ? '120%' : '40%';
-            states.preview.style.height = zoomState === 'in' ? '130%' : '100%';
+            let zoom = '200';
+            if (zoomButton.dataset.zoom === 'out') zoom = '100';
+            states.currentPull.style.width = zoom + '%';
+            states.currentPull.style.height = zoom + '%';
         })
     }
 

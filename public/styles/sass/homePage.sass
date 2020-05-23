@@ -1,0 +1,170 @@
+@use '_colors'
+    
+$line-height: 26px
+
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 100px
+    .links
+        a
+            position: relative
+            color: colors.$primary
+            text-decoration: none
+            padding: 0 20px
+            &:hover
+                color: colors.$secondary
+            &.is-active
+                &
+                    color: colors.$secondary
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: -5px
+                    left: 20%
+                    height: 20px
+                    width: 60%
+                    border-bottom: solid 2px colors.$secondary
+    .social
+        a
+            text-decoration: none
+            padding: 0 13px
+            img
+                width: 25px
+                height: 25px
+
+.hero
+    position: relative
+    width: 100%
+    height: 300px
+    background-image: url('../images/home_hero.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    .titles
+        position: absolute
+        top: 50px
+        left: 17%
+        img
+            width: 170px
+        .title
+            font-size: 18px
+            margin-top: 20px
+
+.contents
+    padding: 0 100px
+    .concept
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-top: 25px
+        .content
+            line-height: $line-height
+            width: 45%
+            p
+                margin-top: 25px
+            button
+                margin-top: 50px
+                padding-left: 20px
+                padding-right: 20px
+        .images
+            display: flex
+            justify-content: space-evenly
+            width: 50%
+            img
+                height: 225px
+                width: 159px
+    .concours
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin-top: 100px
+        .example
+            width: 40%
+            img
+                width: 100%
+                height: 100%
+        .content
+            width: 50%
+            .title
+                padding-bottom: 25px
+            p
+                line-height: $line-height
+            .steps
+                .step
+                    display: flex
+                    align-items: center
+                    margin-top: 70px
+                    p
+                        margin-left: 15px
+                        width: 90%
+                    .circle
+                        background-color: colors.$secondary
+                        width: 30px
+                        height: 30px
+                        border-radius: 50%
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        img
+                            width: 25px
+                            height: 25px
+            .buttons
+                margin-top: 50px
+                button:not(:first-child)
+                    margin-left: 30px
+
+.newsletter-section
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    background-color: colors.$third
+    margin-top: 100px
+    height: 25rem
+    img
+        width: 400px
+    p
+        margin-top: 50px
+    .newsletter
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 50px
+        width: 100%
+        .input
+            width: 30%
+            position: relative
+            border-bottom: none
+            input
+                background-color: colors.$third
+            &::after
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 0
+                width: 97%
+                border-bottom: solid 2px colors.$primary
+
+.footer
+    background-color: colors.$black
+    height: 25rem
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    a, p
+        color: colors.$white
+    a
+        text-decoration: none
+    div
+        width: 20%
+        height: 60%
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        &:first-child
+            width: 50%
+            justify-content: space-evenly
+        a:first-child
+            margin-top: 25px
