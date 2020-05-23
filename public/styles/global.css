@@ -331,12 +331,29 @@
   align-items: center;
   height: 100%;
   padding: 0 30px;
+  text-align: center;
+  margin-top: 5%;
 }
 .validationPage h1, .validationPage p, .validationPage button {
   margin: 25px 0;
 }
 .validationPage p {
-  width: 80%;
+  width: 50%;
+}
+.validationPage .date {
+  margin-top: 20px;
+}
+.validationPage .date .underline {
+  display: flex;
+  flex-direction: column;
+}
+.validationPage .date .underline img {
+  width: 100%;
+  height: 100%;
+}
+
+.validationPageFooter {
+  display: none;
 }
 
 .navbar {

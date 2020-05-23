@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then((newUser) => {
                 states.sendForm.style.display = 'none';
                 states.validationPage.style.display = 'flex';
+                states.validationPageFooter.style.display = 'block';
                 states.validationPage.querySelector('button').addEventListener('click', () => {
                     states.validationPage.style.display = 'none';
                     states.customization.style.display = '';
@@ -136,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         preview: document.querySelector('.preview'),
         sendForm: document.querySelector('.sendForm'),
         validationPage: document.querySelector('.validationPage'),
+        validationPageFooter: document.querySelector('.validationPageFooter'),
         selections: {
             last: document.querySelector('.selections button.is-active')
         },

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="57.433" viewBox="0 0 71 57.433">
+  <g id="Calque_2" data-name="Calque 2" transform="translate(0 0.192)">
+    <g id="OBJECTS">
+      <g id="Groupe_135" data-name="Groupe 135">
+        <g id="Groupe_133" data-name="Groupe 133">
+          <path id="Tracé_2" data-name="Tracé 2" d="M70.84,53.294l.121-5.739a4.519,4.519,0,1,0,0-9.038V13.25l14.9,31.634.121.126h.12l10.625-8.18.246-.246,6.713-5.021L100.39,53.294Z" transform="translate(-35.27 -6.597)" fill="#0e1685"/>
+          <path id="Tracé_10" data-name="Tracé 10" d="M38.939,53.609l-.126-5.739a4.519,4.519,0,1,1,0-9.038V13.56L23.92,45.194l-.126.121h-.121l-10.6-8.19-.266-.246L6.09,31.857l3.3,21.732Z" transform="translate(-3.032 -6.751)" fill="#0e1685"/>
+          <path id="Tracé_5" data-name="Tracé 5" d="M103.936,39.148,100.155,19.49,86,30.843l7.682,16.364Z" transform="translate(-42.818 -9.704)" fill="#0e1685"/>
+          <path id="Tracé_11" data-name="Tracé 11" d="M20.62,39.148,24.406,19.49,38.571,30.843,30.878,47.207Z" transform="translate(-10.266 -9.704)" fill="#0e1685"/>
+          <path id="Rectangle_2" data-name="Rectangle 2" d="M13.264,101H68.5a3.264,3.264,0,0,1,3.264,3.264h0a3.264,3.264,0,0,1-3.264,3.264H13.264A3.264,3.264,0,0,1,10,104.264h0A3.264,3.264,0,0,1,13.264,101Z" transform="translate(-4.979 -50.286)" fill="#0e1685"/>
+          <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(54 5.808)" fill="#0e1685"/>
+          <circle id="Ellipse_6" data-name="Ellipse 6" cx="3.5" cy="3.5" r="3.5" transform="translate(64 22.808)" fill="#0e1685"/>
+          <circle id="Ellipse_4" data-name="Ellipse 4" cx="4" cy="4" r="4" transform="translate(10 5.808)" fill="#0e1685"/>
+          <circle id="Ellipse_5" data-name="Ellipse 5" cx="3.5" cy="3.5" r="3.5" transform="translate(0 22.808)" fill="#0e1685"/>
+          <rect id="Rectangle_3" data-name="Rectangle 3" width="11" height="26" transform="translate(31 19.808)" fill="#0e1685"/>
+          <rect id="Rectangle_4" data-name="Rectangle 4" width="3" height="9" transform="translate(34 11.808)" fill="#0e1685"/>
+          <circle id="Ellipse_2" data-name="Ellipse 2" cx="5.5" cy="5.5" r="5.5" transform="translate(31 -0.192)" fill="#0e1685"/>
+          <path id="Tracé_3" data-name="Tracé 3" d="M12.35,85.9H71.359V78.48H12.35Z" transform="translate(-6.149 -39.074)" fill="#0e1685"/>
+          <path id="Tracé_12" data-name="Tracé 12" d="M12.66,97.108h59V95.2h-59Z" transform="translate(-6.303 -47.398)" fill="#0e1685"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
