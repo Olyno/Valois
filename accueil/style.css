@@ -24,14 +24,16 @@
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
-    padding: 20px; }
+    padding: 15px; }
     
   
   ul li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    color: black; }
+    font-size: 18px;
+    color: black; 
+    font-family: "poppins";
+  }
     .img2p1{
         position: absolute;
         height: 20px;
@@ -60,29 +62,32 @@
     }
     .img5p1{
         height: 70px;
-        width: 170px;
+        width: 190px;
         position: absolute;
-        left: 20%;
+        left: 19%;
         top: 17%;
     }
     .p1p1{
         position: absolute;
-        left: 20%;
+        left: 19%;
         top: 27%;
-        font-size: 18px;
+        font-size: 16px;
+        font-family: "poppins";
     }
     .p2p1{
         position: absolute;
         top:55%;
         left: 8%;
+        font-family: "poppins";
     }
     .p3p1{
         position: absolute;
-        top:65%;
+        top:63%;
         left: 8%;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 27px;
         width: 550px;
+        font-family: "poppins";
     }
     .img6p1{
         position:absolute;
@@ -107,7 +112,7 @@
     }
     .button1p1{
         position: absolute;
-        top: 92%;
+        top: 91%;
         left: 8%;
         height: 45px;
         width: 100px;
@@ -115,6 +120,7 @@
         font-size: 16px;
         color: black;
         background-color: white;
+        font-family: "poppins";
     }
     .page2{
         position: relative;;
@@ -123,25 +129,27 @@
       }
       .img1p2{
           position: absolute;
-          top: 20%;
+          top: 18%;
           left: 10%;
       }
       .p1p2{
         position:absolute;
-        top: 5%;
+        top: 6%;
         left: 50%;
+        font-family: "poppins";
       }
       .p2p2{
         position:absolute;
-        top: 18%;
+        top: 16%;
         left: 50%;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 27px;
         width: 550px;
+        font-family: "poppins";
       }
       .rond1p2{
           position: absolute;
-          top: 35%;
+          top: 34%;
           left:50%;
           height: 50px;
           width: 50px;
@@ -157,10 +165,12 @@
       }
       .p3p2{
         position: absolute;
-        top: 35%;
-        left:56%;
+        top: 34%;
+        left:55%;
         width: 470px;
+        font-size: 16px;
         line-height: 20px;
+        font-family: "poppins";
       }
       .rond2p2{
         position: absolute;
@@ -181,9 +191,11 @@
     .p4p2{
       position: absolute;
       top: 48%;
-      left:56%;
+      left:55%;
       width: 470px;
+      font-size: 16px;
       line-height: 20px;
+      font-family: "poppins";
     }
     .rond3p2{
         position: absolute;
@@ -204,13 +216,15 @@
     .p5p2{
       position: absolute;
       top: 60%;
-      left:56%;
+      left:55%;
       width: 470px;
+      font-size: 16px;
       line-height: 20px;
+      font-family: "poppins";
     }
     .button1p2{
         position: absolute;
-        top: 82%;
+        top: 78%;
         left: 50%;
         height: 45px;
         width: 130px;
@@ -218,10 +232,11 @@
         font-size: 16px;
         color: black;
         background-color: white;
+        font-family: "poppins";
     }
     .button2p2{
         position: absolute;
-        top: 82%;
+        top: 78%;
         left: 62%;
         height: 45px;
         width: 230px;
@@ -229,6 +244,7 @@
         font-size: 16px;
         color: black;
         background-color: white;
+        font-family: "poppins";
     }
     .page3{
         position: relative;;
@@ -246,15 +262,16 @@
       .p1p5{
         position: absolute;
         top: 54%;
-        left: 22%;
-        font-size: 28px;
+        left: 17%;
+        font-size: 25px;
+        font-family: "poppins";
       }
       .mail{
         position: absolute;
         top: 65%;
-        left: 27%;
+        left: 24%;
         height: 5%;
-        width: 28%;
+        width: 40%;
         font-size: 22px;
         border:1px solid black;
         color: black;
@@ -263,13 +280,14 @@
     .button1p3{
         position: absolute;
         top: 65%;
-        left: 54%;
+        left: 63%;
         height: 5%;
-        width: 7%;
+        width: 9%;
         border:1px solid black;
         font-size: 16px;
         color: black;
         background-color: #E2E2E0;
+        font-family: "poppins";
     }
     .page4{
         position: relative;;
@@ -282,98 +300,112 @@
           top: 20%;
           left:15%;
           color: white;
-          font-size: 20px;
+          font-size: 18px;
+          font-family: "poppins";
       }
       .p2p4{
         position: absolute;
         top: 33%;
         left:15%;
         color:#E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
         width: 300px;
-        line-height: 28px;
+        line-height: 23px;
+        font-family: "poppins";
       }
       .p3p4{
         position: absolute;
         top: 20%;
         left:52%;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p4p4{
         position: absolute;
         top: 33%;
         left:52%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p5p4{
         position: absolute;
         top: 42%;
         left:52%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p6p4{
         position: absolute;
         top: 52%;
         left:52%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p7p4{
         position: absolute;
         top: 62%;
         left:52%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p8p4{
         position: absolute;
         top: 72%;
         left:52%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p9p4{
         position: absolute;
         top: 20%;
         left:72%;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p10p4{
         position: absolute;
         top: 37%;
         left:72%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p11p4{
         position: absolute;
         top: 47%;
         left:72%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p12p4{
         position: absolute;
         top: 57%;
         left:72%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p13p4{
         position: absolute;
         top: 67%;
         left:72%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
       .p14p4{
         position: absolute;
         top: 67%;
         left:82%;
         color: #E2E2E0;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "poppins";
       }
